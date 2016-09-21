@@ -6,6 +6,16 @@ drop.get("hello") { request in
     return "Hello, world!"
 }
 
+drop.get("item") { request in
+    let a = TodoItem.init(title: "abc", id:"N686nJ")
+    return a.itemdescription()//"Hello, world!"
+}
+
+drop.get("itemnil") { request in
+    let a = TodoItem.init()
+    return a.itemdescription()//"Hello, world!"
+}
+
 drop.get("users", Int.self) { request, userId in
     return "You requested User #\(userId)"
 }
