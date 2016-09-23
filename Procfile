@@ -1,1 +1,1 @@
-web: ./.build/debug/App --env=production --workdir="./"
+web: HelloApp --env=production --workdir="./"
